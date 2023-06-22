@@ -1,6 +1,6 @@
 baseurl = "https://example.com/"
 title = "console-engine"
-theme = "console-engine"
+theme = "theme"
 languageCode = "ko-kr"
 
 [params]

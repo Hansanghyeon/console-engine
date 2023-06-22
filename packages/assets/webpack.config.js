@@ -2,8 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WatchExternalFilesPlugin = require('webpack-watch-external-files-plugin')
 
-const assetsDir = path.resolve(__dirname, '../../assets');
-const layoursDir = path.resolve(__dirname, '../../layouts');
+const assetsDir = path.resolve(__dirname, '../../theme/assets');
+const layoursDir = path.resolve(__dirname, '../../theme/layouts');
 
 module.exports = {
   entry: ['./script/index.ts', './style/index.scss'],

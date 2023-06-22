@@ -4,7 +4,7 @@ const mono = `D2Coding, 'D2 coding', monosapce`.split(', ')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-    '../../layouts/**/*',
+    '../../theme/layouts/**/*',
     './style/**/*',
     './script/**/*',
   ],
