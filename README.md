@@ -14,3 +14,9 @@
 ```sh
 make hugo-server
 ```
+
+## install
+
+```sh
+npx degit https://github.com/Hansanghyeon/console-engine/packages/theme console-engine
+```
