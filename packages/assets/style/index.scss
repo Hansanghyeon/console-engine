@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+  .medium-zoom-overlay {
+    @apply bg-[#e7e7e7] dark:bg-[#22272e]
+  }
+}

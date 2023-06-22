@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container mx-auto lg:max-w-[74ch] px-[34px]">
+  <div class="prose dark:prose-invert">
+    <h1 class="mb-[0.4em]">{{ .Title }}</h1>
+    {{ partial "metadata.html" . }}
+  </div>
+</div>
+<div class="container mx-auto lg:max-w-[74ch] px-[34px] py-[34px] bg-white rounded-[8px] shadow-lg dark:bg-[#2d333b] mt-[60px]">
+  <article class="prose max-w-none dark:prose-invert">
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
