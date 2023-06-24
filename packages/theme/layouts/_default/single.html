@@ -1,12 +1,25 @@
 {{ define "main" }}
-<div class="container mx-auto lg:max-w-[74ch] px-[34px]">
-  <div class="prose dark:prose-invert">
+<div class="container mx-auto lg:max-w-[74ch] lg:px-0">
+  <div class="prose dark:prose-invert max-w-none">
     <h1 class="mb-[0.4em]">{{ .Title }}</h1>
     {{ partial "metadata.html" . }}
   </div>
 </div>
-<div class="container mx-auto lg:max-w-[74ch] px-[34px] py-[34px] bg-white rounded-[8px] shadow-lg dark:bg-[#2d333b] mt-[60px]">
-  <article class="prose max-w-none dark:prose-invert">
+<div class="container px-0 mx-auto lg:max-w-[74ch] py-[34px] bg-white rounded-[8px] shadow-lg dark:bg-[#2d333b] mt-[40px]">
+  <article class="
+    prose
+    max-w-none
+    dark:prose-invert
+    [&>*:not(.highlight)]:px-[34px]
+    [&_pre]:rounded-none
+    [&_pre]:scrollbar-hidden
+    [&_pre]:px-[34px]
+    [&_pre]:font-mono
+    dark:[&_img[src$='#light-mode-only']]:hidden
+    [&_img[src$='#dark-mode-only']]:hidden
+    dark:[&_img[src$='#dark-mode-only']]:block
+    [&>*:first-child:not(:where([class~='not-prose']_*))_img]:mt-[0px]
+  ">
     {{ .Content }}
   </article>
 </div>

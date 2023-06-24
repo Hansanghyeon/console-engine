@@ -5,11 +5,11 @@ title: "About"
 
 A minimal, responsive and light theme for Hugo inspired by Linux console. 
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true")
 
 ## Installation
 
-```
+```sh
 $ mkdir themes
 $ cd themes
 $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
